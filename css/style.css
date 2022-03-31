@@ -1,0 +1,467 @@
+    @font-face {
+        font-family: "gothamSSm";
+        src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Light_Web.woff2) format("woff2");
+        font-weight: "light";
+    }
+    /* Scroll Effect */
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    /* hide scrollbar */
+    
+    body {
+        -ms-overflow-style: none;
+        /* for Internet Explorer, Edge */
+        scrollbar-width: none;
+        /* for Firefox */
+        overflow-y: scroll;
+    }
+    
+    body::-webkit-scrollbar {
+        display: none;
+        /* for Chrome, Safari, and Opera */
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "gothamSSm";
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    #Header-Page {
+        background: url(../images/Model3-1.jpg) no-repeat center center/cover;
+        height: 100vh;
+        color: white;
+    }
+    /* SECTION - 1 */
+    /* Navbar */
+    
+    .Navbar {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    /* Navbar-Logo */
+    
+    .Navbar .container-logo {
+        width: 12%;
+        display: flex;
+        justify-content: center;
+        margin-left: 80px;
+    }
+    
+    .container-logo .logo {
+        width: 100%;
+        object-fit: cover;
+    }
+    /* Navbar - Middle */
+    
+    .Navbar .Nav-Middle {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .Nav-Middle .Nav-Middle-Links {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    
+    .Nav-Middle .Nav-Middle-Links li {
+        width: 100%;
+        height: 100%;
+        padding: 7px 0;
+        border-radius: 15px;
+        transition: 0.5s;
+    }
+    /* Navbar - Right */
+    
+    .Navbar .Nav-Right {
+        width: 20%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .Nav-Right .Nav-Right-Links {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    
+    .Nav-Right .Nav-Right-Links li {
+        width: 100%;
+        height: 100%;
+        padding: 7px 10px;
+        border-radius: 15px;
+        transition: 0.5s;
+    }
+    /* Hover Navbar */
+    
+    .Nav-Middle .Nav-Middle-Links li:hover,
+    .Nav-Right .Nav-Right-Links li:hover {
+        background-color: gray;
+        border-radius: 15px;
+    }
+    /* Navbar-Aside */
+    
+    aside {
+        width: 100%;
+    }
+    
+    aside .Navbar-Aside {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    
+    .Navbar-Aside .Nav-Aside-Links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        gap: 5px;
+        top: 30%;
+        padding: 10px;
+    }
+    
+    .Nav-Aside-Links li {
+        height: 25px;
+        border-left: 2px solid gray;
+        opacity: 0.9;
+    }
+    /* Hover Aside Navbar */
+    
+    [data-aside-navbar-titles] {
+        position: relative;
+        cursor: pointer;
+    }
+    
+    [data-aside-navbar-titles]::after {
+        text-align: center;
+        box-sizing: border-box;
+        content: attr(data-aside-navbar-titles);
+        padding: 10px;
+        color: #fff;
+        transition: 0.2s;
+        font-weight: 700;
+        font-size: 12px;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    a [data-aside-navbar-titles]:hover::after {
+        visibility: visible;
+        opacity: 1;
+    }
+    /* H1 - content */
+    
+    .TitleHeaderPage {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        margin-top: 60px;
+    }
+    
+    .TitleHeaderPage h1 {
+        font-size: 3rem;
+    }
+    /* Boxes Header Page  */
+    
+    .BoxesHeaderPage {
+        display: flex;
+        width: 100%;
+        height: 30%;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 300px;
+        gap: 20px;
+    }
+    
+    .BoxesHeaderPage .BoxHeaderPage {
+        width: 150px;
+        height: 150px;
+        text-align: center;
+    }
+    /* Counter 3 Sec Header Page */
+    /* .Counter3Sec {
+        counter-reset: count 0;
+        animation-name: Counter;
+        animation-duration: 3.1s; */
+    /* animation-timing-function: linear; */
+    /* coun: forwards;
+    }
+    
+    .Counter3Sec::after {
+        content: counter(count) ".1 s";
+    }
+    
+    @keyframes Counter {
+        0% {}
+        30% {
+            counter-increment: count +1;
+        }
+        50% {
+            counter-increment: count +2;
+        }
+        60% {
+            counter-increment: count +3;
+        }
+    }  */
+    /* BTN ORDER Header Page */
+    
+    .BtnHeaderPage {
+        width: 200px;
+        height: 40px;
+        border: 3px #fff solid;
+        background: transparent;
+        border-radius: 20px;
+        color: #fff;
+        transition: 0.5s;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    
+    .BtnHeaderPage:hover {
+        background-color: #fff;
+        color: black;
+    }
+    /* Scroll Chevron Header Page & animation */
+    
+    .ScrollChevron {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: flex-end;
+        animation-name: ScrollChevronDown;
+        animation-iteration-count: infinite;
+        animation-duration: 1.5s;
+    }
+    
+    @keyframes ScrollChevronDown {
+        0% {
+            transform: inherit;
+        }
+        33% {
+            transform: translateY(-5px);
+        }
+        66% {
+            transform: inherit;
+        }
+    }
+    /* SECTION - 2 */
+    
+    #Safety-Page {
+        background-color: #f4f4f4;
+        height: 100vh;
+    }
+    
+    #Safety-Page .Page-2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    /* Left Side Page 2 */
+    
+    .Page-2 .LeftSideImg {
+        width: 70%;
+        height: 100%;
+    }
+    
+    .LeftSideImg .ImgPage-2 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* Right Side Page 2 */
+    
+    .Page-2 .RightSideText {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        color: #393c41;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    .TitleRightSideText {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .TitleRightSideText h1 {
+        color: black;
+    }
+    
+    .TitleRightSideText span {
+        font-size: 18px;
+    }
+    
+    .RightSideText .BoxTextPage2 {
+        width: 75%;
+        height: 60%;
+    }
+    
+    .RightSideText .Order-Safety-Page {
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    /* Buttons Order Page 2 */
+    
+    .Order-Safety-Page .PlusBtn {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 3px solid black;
+        cursor: pointer;
+        font-size: 26px;
+        transition: 0.5s;
+    }
+    
+    .Order-Safety-Page .OrderText {
+        height: 45px;
+        display: flex;
+        align-items: center;
+        color: #393c41;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    .Order-Safety-Page .OrderBtn {
+        width: 220px;
+        height: 45px;
+        border-radius: 20px;
+        border: 3px solid black;
+        cursor: pointer;
+        font-weight: 700;
+        transition: 0.5s;
+    }
+    /* Hover Buttons Order Page 2 */
+    
+    .Order-Safety-Page .PlusBtn:hover,
+    .Order-Safety-Page .OrderBtn:hover {
+        background-color: black;
+        color: #fff;
+    }
+    /* SECTION - 3 */
+    
+    #Performance-Page {
+        background-color: #fff;
+        height: 100vh;
+    }
+    
+    #Performance-Page .Page-3 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Page-3 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    /* Background Img - Page 3 */
+    
+    .Page-3 .PerformancePage-BackgroundImg {
+        width: 100%;
+        height: 60vh;
+        background: url(../images/model3-3.jpg) center center/cover;
+    }
+    /* Boxes Page 3 */
+    
+    .BoxesPerformancePage {
+        display: flex;
+        width: 100%;
+        height: 15%;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 320px;
+        color: #fff;
+        gap: 20px;
+    }
+    
+    .BoxesPerformancePage .BoxPerformancePage {
+        width: 20%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    .BoxPerformancePage p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    /* Bottom - Page 3 */
+    
+    .Page-3 .Bottom-Page-3 {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Order Performance Page 3 */
+    
+    .OrderPerformance .TitlePerformance {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .TitlePerformance h1 {
+        color: black;
+    }
+    
+    .TitlePerformance span {
+        font-size: 18px;
+    }
+    
+    .Bottom-Page-3 .OrderPerformance {
+        width: 40%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .OrderPerformance #Order-Performance-Page {
+        display: flex;
+        gap: 20px;
+    }
+    /* Text Performance Page 3 */
+    
+    .Bottom-Page-3 .TextPerformance {
+        width: 60%;
+        font-size: 14px;
+        color: #393c41;
+    }
+    
+    .TextPerformance .BoxTextPerformance {
+        width: 80%;
+        padding: 40px;
+    }
