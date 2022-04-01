@@ -205,31 +205,6 @@
         height: 100px;
         text-align: center;
     }
-    /* Counter 3 Sec Header Page */
-    /* .Counter3Sec {
-        counter-reset: count 0;
-        animation-name: Counter;
-        animation-duration: 3.1s; */
-    /* animation-timing-function: linear; */
-    /* coun: forwards;
-    }
-    
-    .Counter3Sec::after {
-        content: counter(count) ".1 s";
-    }
-    
-    @keyframes Counter {
-        0% {}
-        30% {
-            counter-increment: count +1;
-        }
-        50% {
-            counter-increment: count +2;
-        }
-        60% {
-            counter-increment: count +3;
-        }
-    }  */
     /* BTN ORDER Header Page */
     
     .BtnHeaderPage {
@@ -308,12 +283,179 @@
     .Page-2 .LeftSideImg {
         width: 70%;
         height: 100%;
+        background: url(../images/model3-2.png) center center/cover;
+        display: flex;
+        justify-content: center;
+    }
+    /* Border & Circle on Img Page 2 */
+    
+    .LeftSideImg .BoxesSafetyPage {
+        width: 40%;
+        height: 100%;
+        position: relative;
     }
     
-    .LeftSideImg .ImgPage-2 {
-        width: 100%;
+    .BoxesSafetyPage .Box-1-SafetyPage {
+        width: 50%;
         height: 100%;
-        object-fit: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 100%;
+        top: -15%;
+    }
+    /* Title Boxes Page 2 */
+    
+    .Box-1-SafetyPage::after {
+        content: "Impact Protection";
+        font-weight: 700;
+        font-size: 12px;
+        position: absolute;
+        right: -5%;
+        top: 39%;
+        animation-name: TitleUp;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+    /* Animation Title Up & Down */
+    
+    .Box-1-SafetyPage::after,
+    .Box-3-SafetyPage::after {
+        animation-name: TitleUp;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes TitleUp {
+        from {
+            transform: inherit;
+        }
+        to {
+            transform: translateY(-20px);
+        }
+    }
+    
+    .Box-2-SafetyPage::after {
+        content: "Rigid Structure";
+        font-weight: 700;
+        font-size: 12px;
+        position: absolute;
+        bottom: 28%;
+        right: 23%;
+        animation-name: TitleDown;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes TitleDown {
+        from {
+            transform: inherit;
+        }
+        to {
+            transform: translateY(20px);
+        }
+    }
+    
+    .Box-3-SafetyPage::after {
+        content: "Very Low Rollover Risk";
+        font-weight: 700;
+        font-size: 12px;
+        position: absolute;
+        right: -39%;
+        top: 28%;
+    }
+    
+    .BoxesSafetyPage .Box-2-SafetyPage {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        right: 20%;
+        top: 10%;
+    }
+    
+    .BoxesSafetyPage .Box-3-SafetyPage {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        right: 30%;
+        top: -15%;
+    }
+    
+    .Circle {
+        border: 3px solid black;
+        background-color: #fff;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+    
+    .BorderTop {
+        border-left: 4px solid black;
+        height: 200px;
+    }
+    
+    .BorderLittle {
+        border-left: 4px solid black;
+        height: 120px;
+    }
+    /* Border Animation  Page 2*/
+    
+    #ImpactProtectionBorder {
+        animation-name: BorderAnimation;
+        animation-duration: 3s;
+        transform-origin: bottom;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes BorderAnimation {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+    
+    #RigidStructureBorder {
+        animation-name: RigidStructure;
+        animation-duration: 3s;
+        transform-origin: bottom;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes RigidStructure {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+    
+    #VeryLowRolloverRiskBorder {
+        animation-name: VeryLowRollover;
+        animation-duration: 3s;
+        transform-origin: top;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes VeryLowRollover {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
     }
     /* Right Side Page 2 */
     
