@@ -35,6 +35,9 @@
     .BoxesPerformancePage {
         height: 35%;
     }
+    .BoxesPerformancePage .BoxPerformancePage {
+        width: 30%;
+    }
     .BoxesAllWheelDrive-Page {
         height: 30%;
     }
