@@ -210,6 +210,74 @@
         height: 100px;
         text-align: center;
     }
+    /* Counter 3.1 Seconds */
+    
+    .Counter3Sec::after {
+        content: counter(count) "s";
+        animation: counter 1.5s linear forwards;
+        counter-reset: count 0;
+        transition: 1s;
+    }
+    
+    @keyframes counter {
+        0% {
+            counter-increment: count 0;
+        }
+        33% {
+            counter-increment: count 1;
+        }
+        66% {
+            counter-increment: count 2;
+        }
+        100% {
+            counter-increment: count 3;
+            content: counter(count) " .1s";
+        }
+    }
+    /* Speedometer Header Page*/
+    
+    .Speedometer {
+        width: 85px;
+        height: 20px;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .SpeedometerOuterCircle {
+        height: 20px;
+        width: 50px;
+        position: absolute;
+        top: 0;
+    }
+    
+    .SpeedometerNeedle {
+        position: absolute;
+        bottom: -23%;
+        right: 15%;
+        width: 4px;
+        animation-name: Speedometer;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    
+    .Speedometerinnercircle {
+        width: 30px;
+        height: 15px;
+        position: absolute;
+        bottom: 0;
+        right: 2px;
+        opacity: 0.6;
+        z-index: -1;
+    }
+    
+    @keyframes Speedometer {
+        from {
+            transform: rotate(-90deg);
+        }
+        to {
+            transform: rotate(90deg);
+        }
+    }
     /* Animation to Boxes - Header Page*/
     
     #mph {
@@ -302,7 +370,7 @@
         border-radius: 50%;
         height: 50px;
         width: 50px;
-        padding: 6px;
+        padding: 10px;
         z-index: 1;
     }
     /* SECTION - 2 */
@@ -317,6 +385,27 @@
         height: 100%;
         display: flex;
         flex-wrap: wrap;
+    }
+    /* Scroll Chevron up (page2 & page3 & page4 */
+    
+    .ScrollChevronUp {
+        width: 100%;
+        position: relative;
+        display: flex;
+    }
+    
+    .ChevronUp {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 2%;
+        height: 50px;
+        width: 50px;
+        padding: 20px;
+    }
+    
+    .ScrollChevronUp .fa-solid {
+        color: black;
     }
     /* Left Side Page 2 */
     
@@ -645,6 +734,10 @@
         color: black;
     }
     
+    .TitlePerformance p {
+        font-weight: 500;
+    }
+    
     .TitlePerformance span {
         font-size: 18px;
     }
@@ -725,23 +818,23 @@
     
     .BoxAllWheelDrive-Page p {
         font-size: 12px;
-        font-weight: 600;
+        font-weight: 500;
     }
     /* Boxes animation Page 4 */
     
-    #mphAllWheelDrive {
+    #ControlAllWheelDrive {
         opacity: 0;
         animation: BoxAnimation 1.5s forwards;
         transition: 1s;
     }
     
-    #RangeAllWheelDrive {
+    #MotorAllWheelDrive {
         opacity: 0;
         animation: BoxAnimation 2s forwards;
         transition: 1s;
     }
     
-    #MotorAllWheelDrive {
+    #WeatherAllWheelDrive {
         opacity: 0;
         animation: BoxAnimation 2.5s forwards;
         transition: 1;
