@@ -213,7 +213,7 @@
     /* Counter 3.1 Seconds */
     
     .Counter3Sec::after {
-        content: counter(count) "s";
+        content: counter(count) ".1s";
         animation: counter 1.5s linear forwards;
         counter-reset: count 0;
         transition: 1s;
@@ -225,9 +225,11 @@
         }
         33% {
             counter-increment: count 1;
+            content: counter(count) " .2s";
         }
         66% {
             counter-increment: count 2;
+            content: counter(count) " .7s";
         }
         100% {
             counter-increment: count 3;
