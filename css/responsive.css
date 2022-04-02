@@ -13,6 +13,9 @@
 }
 
 @media(max-width: 1500px) {
+    .Navbar .container-logo {
+        width: 17%;
+    }
     #Safety-Page {
         background-color: #f4f4f4;
     }
