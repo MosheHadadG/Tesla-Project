@@ -1,0 +1,82 @@
+@media(max-width: 1200px) {
+    .Navbar .Nav-Middle {
+        display: none;
+    }
+    .Nav-Right .Nav-Right-Links #Shop,
+    .Nav-Right .Nav-Right-Links #Account {
+        display: none;
+    }
+    .Nav-Right .Nav-Right-Links #Menu {
+        background-color: gray;
+        border-radius: 15px;
+    }
+}
+
+@media(max-width: 1500px) {
+    #Safety-Page {
+        background-color: #f4f4f4;
+    }
+    .Page-2 .LeftSideImg {
+        height: 50vh;
+        width: 100vw;
+    }
+    .Page-2 .RightSideText {
+        width: 78%;
+        height: 97%;
+        margin-top: 30px;
+    }
+    .RightSideText .BoxTextPage2 {
+        height: 20%;
+    }
+    .RightSideText .Order-Safety-Page {
+        width: 60%;
+    }
+    .BoxesPerformancePage {
+        height: 35%;
+    }
+    .BoxesAllWheelDrive-Page {
+        height: 30%;
+    }
+}
+
+@media(max-width: 950px) {
+    /* * {
+        padding: 0;
+        margin: 0;
+    } */
+    /* Bottom Safety Page - Page 2 */
+    .RightSideText .Order-Safety-Page {
+        gap: 20px;
+        height: 15%;
+    }
+    /* bottom Performance Page - Page 3 */
+    .OrderPerformance .TitlePerformance,
+    .Bottom-Page-3 .OrderPerformance,
+    .Bottom-Page-3 .TextPerformance {
+        width: 100%;
+    }
+    .Bottom-Page-3 .OrderPerformance {
+        align-items: flex-start;
+    }
+    .TextPerformance .BoxTextPerformance {
+        padding-left: 40px;
+        width: 96%;
+    }
+    /* Bottom AllWheelDrive-Page - Page 4 */
+    .OrderAllWheelDrive .TitleAllWheelDrive,
+    .Bottom-Page-4 .OrderAllWheelDrive,
+    .Bottom-Page-4 .TextAllWheelDrive {
+        width: 100%;
+    }
+    .Bottom-Page-4 .OrderAllWheelDrive,
+    .OrderAllWheelDrive .TitleAllWheelDrive {
+        align-items: flex-start;
+    }
+    .Bottom-Page-4 .OrderAllWheelDrive {
+        height: 0;
+    }
+    .TextAllWheelDrive .BoxTextAllWheelDrive {
+        padding-left: 40px;
+        width: 96%;
+    }
+}

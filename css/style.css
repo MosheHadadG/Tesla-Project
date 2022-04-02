@@ -191,8 +191,9 @@
         height: 30%;
         justify-content: center;
         align-items: flex-end;
-        margin-top: 320px;
+        margin-top: 310px;
         gap: 35px;
+        flex-wrap: wrap;
     }
     
     .BoxesHeaderPage h2 {
@@ -315,6 +316,7 @@
         width: 100%;
         height: 100%;
         display: flex;
+        flex-wrap: wrap;
     }
     /* Left Side Page 2 */
     
@@ -628,6 +630,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
     /* Order Performance Page 3 */
     
@@ -648,6 +651,7 @@
     
     .Bottom-Page-3 .OrderPerformance {
         width: 40%;
+        height: 40%;
         padding: 40px;
         display: flex;
         flex-direction: column;
@@ -667,6 +671,7 @@
     
     .Bottom-Page-3 .TextPerformance {
         width: 60%;
+        height: 37%;
         font-size: 14px;
         color: #393c41;
         /* animation */
@@ -676,6 +681,130 @@
     }
     
     .TextPerformance .BoxTextPerformance {
+        width: 80%;
+        padding: 40px;
+    }
+    /* Section 4 */
+    
+    #AllWheelDrive-Page {
+        background-color: #fff;
+        height: 100vh;
+    }
+    
+    #AllWheelDrive-Page .Page-4 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    /* Background Img - Page 4 */
+    
+    .Page-4 .AllWheelDrive-Page-BackgroundImg {
+        width: 100%;
+        height: 73vh;
+        background: url(../images/model3-4.jpg) center center/cover;
+    }
+    /* Boxes Page 4 */
+    
+    .BoxesAllWheelDrive-Page {
+        display: flex;
+        width: 100%;
+        height: 8%;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 420px;
+        color: #fff;
+        gap: 40px;
+    }
+    
+    .BoxesAllWheelDrive-Page .BoxAllWheelDrive-Page {
+        width: 16%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    .BoxAllWheelDrive-Page p {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    /* Boxes animation Page 4 */
+    
+    #mphAllWheelDrive {
+        opacity: 0;
+        animation: BoxAnimation 1.5s forwards;
+        transition: 1s;
+    }
+    
+    #RangeAllWheelDrive {
+        opacity: 0;
+        animation: BoxAnimation 2s forwards;
+        transition: 1s;
+    }
+    
+    #MotorAllWheelDrive {
+        opacity: 0;
+        animation: BoxAnimation 2.5s forwards;
+        transition: 1;
+    }
+    /* Bottom - Page 3 */
+    
+    .Page-4 .Bottom-Page-4 {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    /* Order AllWheelDrive-Page Page 4 */
+    
+    .OrderAllWheelDrive .TitleAllWheelDrive {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .TitleAllWheelDrive h1 {
+        color: black;
+    }
+    
+    .TitleAllWheelDrive span {
+        font-size: 18px;
+    }
+    
+    .Bottom-Page-4 .OrderAllWheelDrive {
+        width: 40%;
+        height: 40%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        /* animation */
+        opacity: 0;
+        animation: BoxAnimation 1s forwards;
+        transition: 1s;
+    }
+    
+    .OrderAllWheelDrive #Order-AllWheelDrive {
+        display: flex;
+        gap: 20px;
+    }
+    /* Text Page 4 */
+    
+    .Bottom-Page-4 .TextAllWheelDrive {
+        width: 60%;
+        height: 37%;
+        font-size: 14px;
+        color: #393c41;
+        /* animation */
+        opacity: 0;
+        animation: BoxAnimation 1.5s forwards;
+        transition: 1s;
+    }
+    
+    .TextAllWheelDrive .BoxTextAllWheelDrive {
         width: 80%;
         padding: 40px;
     }
