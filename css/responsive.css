@@ -1,4 +1,7 @@
 @media(max-width: 1200px) {
+    .Navbar .container-logo {
+        width: 20%;
+    }
     .Navbar .Nav-Middle {
         display: none;
     }
@@ -13,9 +16,6 @@
 }
 
 @media(max-width: 1500px) {
-    .Navbar .container-logo {
-        width: 17%;
-    }
     #Safety-Page {
         background-color: #f4f4f4;
     }
